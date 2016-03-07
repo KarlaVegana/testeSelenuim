@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="PageObject.PaginaParametros" x="672" y="253">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="PageObject.PaginaBase"/>
+    </Class>
+    <Class name="PageObject.PaginaBase" x="463" y="26">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="PageObject.PaginaInicial" x="118" y="104">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="PageObject.PaginaBase"/>
+        <Communication destinationClassName="PageObject.PaginaBase"/>
+    </Class>
+    <Class name="PageObject.PaginaLogin" x="788" y="85">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="PageObject.PaginaBase"/>
+        <Communication destinationClassName="PageObject.PaginaBase"/>
+    </Class>
+    <Class name="funcionalTest.ParametroTest" x="405" y="279">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="PageObject.PaginaParametros"
+            endpointName="paginaParametros" kind="Simple"/>
+        <Association destinationClassName="PageObject.PaginaBase"
+            endpointName="paginaBase" kind="Simple"/>
+        <Association destinationClassName="PageObject.PaginaInicial"
+            endpointName="paginaInicial" kind="Simple"/>
+        <Association destinationClassName="PageObject.PaginaLogin"
+            endpointName="paginaLogin" kind="Simple"/>
+        <Communication destinationClassName="PageObject.PaginaParametros"/>
+        <Communication destinationClassName="PageObject.PaginaBase"/>
+        <Communication destinationClassName="PageObject.PaginaInicial"/>
+        <Communication destinationClassName="PageObject.PaginaLogin"/>
+    </Class>
+</ClassDiagram>
